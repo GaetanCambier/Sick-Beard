@@ -57,7 +57,7 @@ def _update_zoneinfo():
 
     # now load the new zoneinfo
     url_tar = u'http://github.com/Prinz23/sb_network_timezones/raw/master/' + new_zoneinfo
-    zonefile = ek.ek(realpath, u'lib/dateutil/zoneinfo/' + new_zoneinfo)
+    zonefile = ek.ek(realpath, u'SickBeard/lib/dateutil/zoneinfo/' + new_zoneinfo)
     zonefile_tmp = re.sub(r"\.tar\.gz$",'.tmp', zonefile)
 
     if (os.path.exists(zonefile_tmp)):
